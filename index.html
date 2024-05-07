@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Consultorio de Tutoría - Sistema de Tickets</h1>
+    </header>
+
+    <main>
+        <!-- Formulario para enviar un ticket -->
+        <section id="ticket-form">
+            <h2>Enviar un Ticket</h2>
+            <form id="send-ticket-form">
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" required></textarea>
+                <label for="nomAlumne">Nom Alumne:</label>
+                <input type="text" id="nomAlumne" name="nomAlumne" required>
+                <label for="urgencia">Urgencia:</label>
+                <select id="urgencia" name="urgencia" required>
+                    <option value="Baja">Baja</option>
+                    <option value="Media">Media</option>
+                    <option value="Alta">Alta</option>
+                </select>
+                <button type="submit">Enviar Ticket</button>
+            </form>
+        </section>
+
+        <!-- Lista de tickets -->
+        <section id="tickets">
+            <h2>Lista de Tickets</h2>
+            <ul id="li">
+                <!-- Aquí se insertarán dinámicamente los tickets -->
+
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Consultorio de Tutoría - Sistema de Tickets</p>
+    </footer>
+    <script src="class.js"></script>
+    <!-- <script src="./main.js"></script> -->
+</body>
+</html>
